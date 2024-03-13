@@ -105,12 +105,12 @@ public class Ch31 {
         }
     }//End PsuedoPrime()
 
-    public static String pseudoPrime(BigInteger n){
+    public static boolean pseudoPrime(BigInteger n){
         //BigInteger one = BigInteger.ONE;
         if (modularExponentiation(BigInteger.TWO, n.subtract(BigInteger.ONE), n).equals(BigInteger.ONE) != true){
-            return COMPOSITE;
+            return false;
         } else {
-            return PRIME;
+            return true;
         }
     }
 
