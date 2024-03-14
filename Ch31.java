@@ -5,11 +5,11 @@ public class Ch31 {
     static final String COMPOSITE = "Composite";
     
     public static void main(String[] args) {
-       /* BigInteger a = new BigInteger("11");
-        BigInteger b = new BigInteger("13");
-        BigInteger n = new BigInteger("8");
+        BigInteger a = new BigInteger("1111");
+        BigInteger b = new BigInteger("1355");
+        BigInteger n = new BigInteger("82");
         int intValue = 8;
-
+        /*
 
 
         System.out.println("Running Euclid's Algorithm: "+ euclid(a,b));
@@ -22,9 +22,9 @@ public class Ch31 {
             System.out.print(printtemp[i] + ", ");
         }
         System.out.println();
-
+        */
         System.out.println("Running Modular Exponentiation Algorithm: " + modularExponentiation(a, b, n));
-
+        /*
         System.out.println("Running Int Pseudo Prime Algorithm: " + pseudoPrime(intValue));
         System.out.println("Running Pseudo Prime Algorithm: " + pseudoPrime(n));
         */

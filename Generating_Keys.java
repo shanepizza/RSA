@@ -8,7 +8,8 @@ public class Generating_Keys {
     public static int bitSize = 1024;
     public static Random rnd= new Random();
     static long longE = 65537;
-    static BigInteger e = BigInteger.valueOf(longE);
+    //static BigInteger e = BigInteger.valueOf(longE);
+    static BigInteger e = BigInteger.valueOf(13);
     static String _filePath_n = ".txt files/n.txt";
     static String _filePath_e = ".txt files/e.txt";
     static String _FilePath_d = ".txt files/d.txt";
@@ -32,8 +33,10 @@ public class Generating_Keys {
     }
 
     public static void initialize_BigInts(){
-        BigInteger first_BigInteger = get_prime(bitSize); //This is p
-        BigInteger second_BigInteger = get_prime(bitSize); // this is q
+        //BigInteger first_BigInteger = get_prime(bitSize); //This is p
+        //BigInteger second_BigInteger = get_prime(bitSize); // this is q
+        BigInteger first_BigInteger = BigInteger.valueOf(101);
+        BigInteger second_BigInteger = BigInteger.valueOf(103);
         BigInteger third_BigInteger_n = calculate_n(second_BigInteger, first_BigInteger); /*This is the "n" they talk about*/ 
 
         BigInteger phiN = (first_BigInteger.subtract(BigInteger.ONE).multiply(second_BigInteger.subtract(BigInteger.ONE)));
